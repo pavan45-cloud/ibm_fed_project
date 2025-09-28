@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review & Rating </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Review & Rating Platform</h1>
+        <input type="text" id="search-input" placeholder="Search for a movie...">
+        <button id="search-btn">Search</button>
+    </header>
+
+    <main>
+        <div id="movie-list"Platform></div>
+    </main>
+
+    <template id="movie-template">
+        <div class="movie-card">
+            <img class="movie-poster" alt="Movie Poster">
+            <div class="movie-details">
+                <h2 class="movie-title"></h2>
+                <p class="movie-year"></p>
+                <p class="movie-plot"></p>
+                <div class="rating-section">
+                    <label for="rating">Rate:</label>
+                    <select class="rating">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="review-section">
+                    <textarea placeholder="Write a review..."></textarea>
+                    <button class="save-review-btn">Save Review</button>
+                </div>
+                <div class="user-reviews"></div>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
